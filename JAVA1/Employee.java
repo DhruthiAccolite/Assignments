@@ -19,7 +19,7 @@ public class Employee {
 		System.out.println(" ID = " + this.id);
 		System.out.println(" Name = " + this.name);
 		System.out.println(" Designation = " + this.designation);
-		System.out.println(" Work Hours = " + this.workHours);
+		System.out.println(" Work Hours = " +workHours);
 	}
 	
 	public static void main(String args[]) {
@@ -65,7 +65,7 @@ class Manager extends Employee {
 		System.out.println(" ID = " + this.id);
 		System.out.println(" Name = " + this.name);
 		System.out.println(" Designation = " + this.designation);
-		System.out.println(" Work Hours = " + this.workHours);
+		System.out.println(" Work Hours = " + workHours);
 	}
 }
 
@@ -85,6 +85,6 @@ class Developer extends Employee {
 		System.out.println(" ID = " + this.id);
 		System.out.println(" Name = " + this.name);
 		System.out.println(" Designation = " + this.designation);
-		System.out.println(" Work Hours = " + this.workHours);
+		System.out.println(" Work Hours = " + workHours);
 	}
 }
