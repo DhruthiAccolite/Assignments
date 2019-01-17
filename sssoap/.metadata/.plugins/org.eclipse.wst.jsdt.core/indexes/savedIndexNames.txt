@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+D:\sssoap\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2229142735.index
+1375267505.index
+3770712818.index
+876784438.index
+1571822070.index

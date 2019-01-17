@@ -1,0 +1,28 @@
+package com.crud.soap;
+
+
+public class imp extends crud{
+	public imp() {
+		//super();
+	}
+//	public imp(String name, String company, int age, int id) {
+//		super(name, company, age, id);
+//		// TODO Auto-generated constructor stub
+//	}
+//	crud c = new crud();
+//	public String createlist(){
+//		
+//		return c.create().toString();
+//	}
+//	public String updatelist(String name,String company,int age,int id) {
+//		return c.update(name, company, age, id);
+//	}
+//	public String readlist(String name,String company,int age,int id) {
+//		return c.read(name, company, age, id);
+//	}
+//	public String deletelist(int id) {
+//		return c.delete(id);
+//	}
+	
+}
+

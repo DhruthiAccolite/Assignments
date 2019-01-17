@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://soap.crud.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://soap.crud.com" xmlns:intf="http://soap.crud.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://soap.crud.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="updatelist">
+    <complexType>
+     <sequence>
+      <element name="name" type="xsd:string"/>
+      <element name="company" type="xsd:string"/>
+      <element name="age" type="xsd:int"/>
+      <element name="id" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updatelistResponse">
+    <complexType>
+     <sequence>
+      <element name="updatelistReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="readlist">
+    <complexType>
+     <sequence>
+      <element name="name" type="xsd:string"/>
+      <element name="company" type="xsd:string"/>
+      <element name="age" type="xsd:int"/>
+      <element name="id" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="readlistResponse">
+    <complexType>
+     <sequence>
+      <element name="readlistReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="createlist">
+    <complexType/>
+   </element>
+   <element name="createlistResponse">
+    <complexType>
+     <sequence>
+      <element name="createlistReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="deletelist">
+    <complexType>
+     <sequence>
+      <element name="id" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="deletelistResponse">
+    <complexType>
+     <sequence>
+      <element name="deletelistReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="readlistResponse">
+
+      <wsdl:part element="impl:readlistResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createlistResponse">
+
+      <wsdl:part element="impl:createlistResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updatelistRequest">
+
+      <wsdl:part element="impl:updatelist" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createlistRequest">
+
+      <wsdl:part element="impl:createlist" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="deletelistResponse">
+
+      <wsdl:part element="impl:deletelistResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updatelistResponse">
+
+      <wsdl:part element="impl:updatelistResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="readlistRequest">
+
+      <wsdl:part element="impl:readlist" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="deletelistRequest">
+
+      <wsdl:part element="impl:deletelist" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="imp">
+
+      <wsdl:operation name="updatelist">
+
+         <wsdl:input message="impl:updatelistRequest" name="updatelistRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updatelistResponse" name="updatelistResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="readlist">
+
+         <wsdl:input message="impl:readlistRequest" name="readlistRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:readlistResponse" name="readlistResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createlist">
+
+         <wsdl:input message="impl:createlistRequest" name="createlistRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createlistResponse" name="createlistResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="deletelist">
+
+         <wsdl:input message="impl:deletelistRequest" name="deletelistRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:deletelistResponse" name="deletelistResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="impSoapBinding" type="impl:imp">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="updatelist">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updatelistRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updatelistResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="readlist">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="readlistRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="readlistResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createlist">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createlistRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createlistResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="deletelist">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="deletelistRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="deletelistResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="impService">
+
+      <wsdl:port binding="impl:impSoapBinding" name="imp">
+
+         <wsdlsoap:address location="http://localhost:8080/crud/services/imp"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

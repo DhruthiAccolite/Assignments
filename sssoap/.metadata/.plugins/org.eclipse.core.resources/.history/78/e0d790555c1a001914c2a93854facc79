@@ -1,0 +1,6 @@
+package com.crud.soap;
+class imp{
+	public int add(int a,int b) {
+		return a+b;
+	}
+}
