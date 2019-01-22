@@ -1,0 +1,4 @@
+Paths to be used:
+/student:will give a form to enter student data
+/getStudents:will display student data in DB
+/factoryStudents:will create 2 beans(highschool,primary) and create default values for the same
