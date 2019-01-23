@@ -1,0 +1,29 @@
+1548225427933	Rename package 'com.spring.dao.impl'
+1548225452536	Delete element
+1548225457219	Move package
+1548225459367	Move package
+1548225461921	Move package
+1548225465025	Move package
+1548225467389	Move package
+1548225470432	Move package
+1548225472471	Move package
+1548225476772	Move package
+1548225479128	Move package
+1548225481615	Move package
+1548225542948	Move 'constant' to 'spring'
+1548225549705	Move 'controller' to 'spring'
+1548225552504	Move 'dao' to 'spring'
+1548225555880	Move 'model' to 'spring'
+1548225558508	Move 'query' to 'spring'
+1548225560813	Move 'rowmappers' to 'spring'
+1548225563319	Move 'service' to 'spring'
+1548225573926	Move 'table' to 'spring'
+1548225637354	Delete elements
+1548225644315	Delete elements
+1548225717405	Delete element
+1548225845830	Delete element
+1548226219317	Delete element
+1548226309783	Encapsulate field 'studentId'
+1548226315172	Encapsulate field 'studentName'
+1548226988314	Delete element
+1548233683595	Delete element

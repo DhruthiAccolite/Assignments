@@ -1,0 +1,5 @@
+package com.spring.au.model;
+
+public class Student {
+
+}

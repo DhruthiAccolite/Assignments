@@ -1,0 +1,6 @@
+package com.spring.au.model;
+
+public class Student {
+	private String studentName;
+	private int studentId;
+}

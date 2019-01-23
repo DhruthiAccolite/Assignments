@@ -1,0 +1,44 @@
+package com.spring.au.model;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Student {
+	private String studentName;
+	private int studentId;
+	
+	public static final String NAME="name";
+	
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	
+	/**
+	 * Gets the student id.
+	 *
+	 * @return the student id
+	 */
+	public int getStudentId() {
+		return studentId;
+	}
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+		
+	}
+	public Map<String,List<Student>> jdcs(List<Student> emplist){
+		Map<String ,List<Student>> empmap=new HashMap<String, List<Student>>();
+		for(Student e:emplist){
+			if(empmap.containsKey(e.getStudentName())){
+				List<Student> s =empmap.get(e.getStudentName());
+				s.add(e);
+				empmap.merge(e.getStudentName(), s);
+			}
+			else {
+				empmap.put(e.studentName,e);
+			}
+		}
+}

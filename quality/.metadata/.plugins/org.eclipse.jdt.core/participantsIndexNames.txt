@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+D:\quality\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\129753273.index
+\springCodeQuality\src\main\resources

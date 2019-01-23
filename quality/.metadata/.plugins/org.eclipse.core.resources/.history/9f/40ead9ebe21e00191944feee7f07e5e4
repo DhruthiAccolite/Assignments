@@ -1,0 +1,22 @@
+package com.au.spring.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.au.spring.dao.StudentDao;
+
+@Service
+public class StudentService {
+	
+	@Autowired
+	StudentDao studentDao;
+	
+	public String getName() {
+		return studentDao.getName();
+	}
+
+	public String insertStudentDetails() {
+		return studentDao.insertStudentDetails();
+	}
+
+}

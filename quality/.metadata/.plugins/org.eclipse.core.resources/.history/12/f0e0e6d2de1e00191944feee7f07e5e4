@@ -1,0 +1,12 @@
+package com.au.spring.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class StudentDao {
+
+	public String getName() {
+		return "dhruthi";
+	}
+
+}

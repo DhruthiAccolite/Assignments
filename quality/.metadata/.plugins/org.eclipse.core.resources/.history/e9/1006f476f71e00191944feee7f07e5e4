@@ -1,0 +1,30 @@
+package com.au.spring.rowmapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import com.au.spring.model.Student;
+
+public class RowMapperStudent { 
+public JdbcTemplate template;  
+  
+
+
+public List<Student> getAllStudentsRowMapper(){  
+ return template.queryForObject("select * from students",new RowMapper<Student>(){  
+    @Override  
+    public Student mapRow(ResultSet rs, int rownumber) throws SQLException {  
+        Student e=new Student();  
+        e.setStudentId(rs.getInt(1));  
+        e.setStudentName(rs.getString(2));  
+        return e;  
+    }  
+    });  
+}
+
+}  

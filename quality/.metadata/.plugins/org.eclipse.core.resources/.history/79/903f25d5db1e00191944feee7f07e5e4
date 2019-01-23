@@ -1,0 +1,5 @@
+server.port=8080
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost/test
+jdbc.username=root
+jdbc.password=root

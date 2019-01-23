@@ -1,0 +1,17 @@
+package com.au.spring.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class StudentDao {
+	
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	
+	public String getName() {
+		return jdbcTemplate.queryForObject("select studentName from students where studentId=1", String.class);
+	}
+
+}
