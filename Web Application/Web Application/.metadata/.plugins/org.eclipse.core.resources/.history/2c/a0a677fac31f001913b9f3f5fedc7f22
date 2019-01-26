@@ -1,0 +1,14 @@
+package com.au.library.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+@Configuration
+@EnableWebMvc
+@ComponentScan(basePackages="com.au.library")
+public class SpringConfig extends WebMvcConfigurerAdapter{
+	
+	
+}

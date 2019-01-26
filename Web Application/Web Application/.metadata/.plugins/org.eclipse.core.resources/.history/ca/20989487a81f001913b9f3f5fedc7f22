@@ -1,0 +1,9 @@
+package com.au.library.model;
+
+public class Book {
+	private String id;
+	private String bookName;
+	private String authorName;
+	private double price;
+	private String  description;
+}

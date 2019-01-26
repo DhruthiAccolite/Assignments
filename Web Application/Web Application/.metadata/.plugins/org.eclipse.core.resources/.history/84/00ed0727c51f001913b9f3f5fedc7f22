@@ -1,0 +1,5 @@
+package com.au.library.repository;
+
+public class BookDAO {
+
+}
