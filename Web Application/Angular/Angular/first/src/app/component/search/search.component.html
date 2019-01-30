@@ -1,0 +1,27 @@
+<p class="sectionheader jumbotron">
+  <span class="book">
+    books
+  </span>
+</p>
+<div>
+ 
+  <span *ngFor="let book of books" >
+
+     
+          <tr scope="row">
+            <ul>
+              <a [routerLink]="['/book',book.id]" routerLinkActive="active"> <li>Book Name:{{book.bookName}}</li></a> 
+                <li>Book Id:{{book.id}}</li>
+                <li>Book Description:{{book.description}}</li>
+                <li>Book Author Name:{{book.authorName}}</li>
+                <li>Book Price:{{book.price}}</li>
+              </ul>
+              <button type="button" [routerLink]="['/checkout',book.id,'get']" routerLinkActive="active">Add</button>
+     
+          </tr>
+                
+        
+       
+  </span>
+
+</div>

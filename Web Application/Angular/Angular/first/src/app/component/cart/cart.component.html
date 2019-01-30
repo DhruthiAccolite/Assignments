@@ -1,0 +1,22 @@
+<p class="sectionheader jumbotron">
+  <span class="book">
+    Checkedout Books
+  </span>
+</p>
+<div>
+    
+  <span *ngFor="let book of books" >
+
+          
+                <ul>
+                     <li>Book Name:{{book.bookName}}</li> 
+                      <li>Book Id:{{book.id}}</li>
+                      <li>Book Description:{{book.description}}</li>
+                      <li>Book Author Name:{{book.authorName}}</li>
+                      <li>Book Price:{{book.price}}</li>
+                </ul>     
+     
+  </span>
+
+
+</div>

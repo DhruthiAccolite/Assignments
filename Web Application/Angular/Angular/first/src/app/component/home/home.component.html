@@ -1,0 +1,28 @@
+<p>
+  home works!
+</p>
+
+ <div class="jumbotron">
+  <h3>Add a Book:</h3>
+  <div>
+      <label for="bookId">ID:</label>
+      <input type="text" id="bookId" [(ngModel)]="book.id">
+  </div>
+  <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" [(ngModel)]="book.bookName">
+  </div>
+  <div>
+      <label for="desc">Description:</label>
+      <input type="text" id="desc" [(ngModel)]="book.description">
+  </div>
+  <div>
+      <label for="author">Author:</label>
+      <input type="text" id="author" [(ngModel)]="book.authorName">
+  </div>
+  <div>
+      <label for="price">Price:</label>
+      <input type="text" id="price" [(ngModel)]="book.price">
+  </div>
+  <button type="button" (click)="postData()">Add Book</button>
+  </div>
